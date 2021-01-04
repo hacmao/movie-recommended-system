@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+    name: python-client
+    namespace: project
+spec:
+    containers:
+    - name: kafka-client
+      image: hacmao/kafka-client:1.0.0
+      imagePullPolicy: IfNotPresent
+
